@@ -29,8 +29,6 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		print_r(Config::get('cache_dir'));
-		exit;
 		return Response::forge(View::forge('welcome/index'));
 	}
 
